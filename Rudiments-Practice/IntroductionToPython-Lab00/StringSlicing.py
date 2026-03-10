@@ -1,5 +1,5 @@
 # Man this reminds me of Sir Minhas ki class in A2 Nix 
-# the extra class in Audi (Sir Naushad ka room), Revision Class Merged for both CMp 204 & 205
+# the extra class in Audi (Sir Naushad ka room), Revision Class Merged for both CMP 204 & 205
 # 2 weeks before p4 practical, and lol no one could recall this ke yeh sir ne prhaya tha 
 # sir was stunned!!
 
@@ -26,3 +26,4 @@ print(t*2)
 
 #prints the string in t with the concatenated pattern of 'TEST'
 print(t + 'TEST')
+
