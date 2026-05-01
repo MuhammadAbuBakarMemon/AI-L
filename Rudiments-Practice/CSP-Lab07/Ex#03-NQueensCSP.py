@@ -82,14 +82,3 @@ solution_printer = NQueensSolutionPrinter(queens)
 solver.parameters.enumerate_all_solutions = True
 status = solver.solve(model, solution_printer )
 
-
-
-diag1 = []
-for i in range(board_size):
-    # Reintroduce the loop to define 'i'
-    q1 = Model.NewIntVar(0, 2 * board_size, f'diag1_{i}')
-    diag1.append(q1)
-    # Need to define j, assuming you want it to be the same as i:
-    Model.Add(q1 == queens[i] + i)
-
-Model.AddAllDifferent(diag1)
