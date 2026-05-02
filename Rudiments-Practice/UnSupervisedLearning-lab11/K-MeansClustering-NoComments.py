@@ -1,5 +1,5 @@
 import pandas as pd 
-from sklearn.preprocessing import StandardScalar
+from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 
@@ -8,14 +8,14 @@ df.head()
 
 x = df.iloc[ : , [3, 4]].values
 
-scalar = StandardScalar()
-x_scaled = scalar.fir_transform(x)
+scalar = StandardScaler()
+x_scaled = scalar.fit_transform(x)
 
 wcss_list = []
 
-for x in range(1, 11):
-    kmeans = KMeans()
-    kmeans.fit(n_clusters=x, init='k-means++', n_init=10, random_state=42)
+for m in range(1, 11):
+    kmeans = KMeans(n_clusters = m, init = 'k-means++', n_init = 10, random_state = 42)
+    kmeans.fit(x_scaled)
     wcss_list.append(kmeans.inertia_)
 
 plt.plot(range(1, 11), wcss_list)
@@ -24,7 +24,7 @@ plt.xlabel("Number of Clusters(k)")
 plt.ylabel("WCSS")
 plt.show()
 
-kmeans = kmeans.fit(n_clusters=5, init='k-means++', n_init=10, random_state = 42)
+kmeans = KMeans (n_clusters=5, init='k-means++', n_init=10, random_state = 42)
 y_predict = kmeans.fit_predict(x_scaled)
 
 unscaled_centroids = scalar.inverse_transform(kmeans.cluster_centers_)
