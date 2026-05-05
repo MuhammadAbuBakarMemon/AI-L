@@ -1,0 +1,21 @@
+student_id,name,age,gender,grade,attendance_percentage,city
+1,John Doe,22,Male,85,92.5,New York
+2,jane smith,19,female,78,88,los angeles
+3,ALICE JOHNSON,21,Female,92,95.5,Chicago
+4,Bob Wilson,200,Male,88,85,Houston
+5,charlie brown,20,M,76,90,Phoenix
+6,Diana Prince,22,Female,95,98.5,Philadelphia
+7,John Doe,22,Male,85,92.5,New York
+8,Eve Turner,24,F,82,,San Antonio
+9,Frank Castle,23,male,79,87.5,San Diego
+10,,25,Female,88,91,Dallas
+11,Grace Lee,21,Female,94,96,San Jose
+12,Henry Adams,22,Male,Invalid,89.5,Austin
+13,Ivy Chen,20,female,91,94,Jacksonville
+14,Jack Ryan,-5,M,85,88,Columbus
+15,Kate Bishop,23,Female,89,92,Fort Worth
+16,Leo Martinez,22,MALE,87,90.5,Charlotte
+17,Mia Anderson,21,F,93,97,San Francisco
+18,Ivy Chen,20,female,91,94,Jacksonville
+19,Oscar Isaac,24,Male,80,86.5,Indianapolis
+20,Paul Rudd,22,male,84,89,Seattle
